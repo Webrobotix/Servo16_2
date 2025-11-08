@@ -36,6 +36,7 @@ MIT License
  * Webrobotix 2020-2025 - Servo16 v2
  * 16-Channel RC Servo Controller Interface with Sequence Recording
  * NEW in v1.6.1: Added Save As button for saving settings with a new filename
+ * Servo16.2 added saving keyframes
  */
 
 import processing.serial.*;
@@ -365,7 +366,7 @@ void drawSequenceControls() {
   if (!lastLoadedKeyframeFile.equals("")) {
     textSize(12);
     fill(100);
-    text("Loaded: " + lastLoadedKeyframeFile, 60, 708);
+    text("Loaded: " + lastLoadedKeyframeFile, 960, 630);
   }
 
   recordButton.buttonColor = isRecording ? RECORDING_BUTTON_COLOR : RECORD_BUTTON_COLOR;
